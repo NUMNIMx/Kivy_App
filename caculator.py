@@ -15,13 +15,11 @@ class CalculatorApp(App):
 
         main_layout = BoxLayout(orientation='vertical', spacing=10, padding=10)
 
-        # Result Display
         result_layout = AnchorLayout(anchor_x='right', anchor_y='top', size_hint_y=0.2)
         self.result = TextInput(font_size=120, readonly=True, halign='right', multiline=False)
         result_layout.add_widget(self.result)
         main_layout.add_widget(result_layout)
 
-        # Numeric and Operation Buttons
         button_layout = GridLayout(cols=4, spacing=10, size_hint_y=0.6)
 
         buttons = [
