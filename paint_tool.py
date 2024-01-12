@@ -9,12 +9,11 @@ from kivy.graphics import Line, Color, Ellipse
 class PaintWidget(Widget):
     def __init__(self, **kwargs):
         super(PaintWidget, self).__init__(**kwargs)
-        self.color = (1, 1, 1, 1)  # Initial color of the paintbrush
-
+        self.color = (1, 1, 1, 1)
     def on_touch_down(self, touch):
         with self.canvas:
             Color(*self.color)
-            d = 10  # Size of the paintbrush tip
+            d = 10
             Ellipse(pos=(touch.x - d / 2, touch.y - d / 2), size=(d, d))
             touch.ud['line'] = Line(points=(touch.x, touch.y), width=2)
 
