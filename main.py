@@ -2,19 +2,19 @@ import subprocess
 from kivy.app import App
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.label import Label  # Import Label
+from kivy.uix.label import Label  
 
 class MyApp(App):
     def build(self):
-        label = Label(text='PLEASE SELECT YOUR APP', font_size='20sp', height=45)
+        label = Label(text='PLEASE SELECT YOUR APP', font_size='40sp', height=45)
 
-        button_hello = Button(text='Open Calculator.py', size=(20, 40))
+        button_hello = Button(text='Calculator', size=(20, 40),font_size='30sp')
         button_hello.bind(on_press=self.open_hello_app)
 
-        button_another = Button(text='Open Paint tool.py', size=(20, 40))
+        button_another = Button(text='Paint tool', size=(20, 40),font_size='30sp')
         button_another.bind(on_press=self.open_another_app)
 
-        button_another1 = Button(text='Open CPS Test', size=(20, 40))
+        button_another1 = Button(text='CPS Test', size=(20, 40),font_size='30sp')
         button_another1.bind(on_press=self.open_another1_app)
 
         layout = BoxLayout(orientation='vertical')
