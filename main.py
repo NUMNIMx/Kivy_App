@@ -32,7 +32,7 @@ class MyApp(App):
         subprocess.Popen(['python', 'paint_tool.py'])
 
     def open_another1_app(self, instance):
-        subprocess.Popen(['python', 'click_per_sec_test.py'])
+        subprocess.Popen(['python', 'cps.py'])
 
 if __name__ == '__main__':
     MyApp().run()
