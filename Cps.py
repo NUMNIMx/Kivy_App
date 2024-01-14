@@ -52,3 +52,5 @@ class CPSClickTestApp(App):
 
 if __name__ == '__main__':
     CPSClickTestApp().run()
+
+แมว
